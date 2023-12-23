@@ -1,0 +1,25 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    display: block;
+    text-align:center;
+    font-size: 64px;
+}
+
+.card {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-color: aliceblue;
+    background: #E9EAEC;
+}
+
+.social-network a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
