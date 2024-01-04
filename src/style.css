@@ -68,6 +68,8 @@ form {
 .poem {
     font-size: 16px;
     padding: 20px;
+    line-height: 2;
+    
 }
 .social-network a {
     text-decoration: none;
