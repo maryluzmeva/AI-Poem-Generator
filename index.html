@@ -14,16 +14,28 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="text-lg-center">Poem Generator</h1>
-	<div class="col d-flex justify-content-center">
-		<div class="card" style="width: 34rem;">
-			<div class="card-body">
-				<h5 class="card-title">Your Poem</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="/index.html" class="card-link">Create another</a>
+		<header>
+			<h1 class="text-lg-center">Poem Generator</h1>
+		</header>
+		<div class="col d-flex justify-content-center">
+			<div class="card" style="width: 34rem;">
+				<div class="card-body">
+					<h5 class="card-title">Your Poem</h5>
+					<form>
+						<input 
+						type="text"
+						placeholder="Enter the topic of your poem"
+						autofocus
+						required
+						autocomplete="off" />
+						<input type="submit"/>
+					</form>
+					<div class="card-body-text">
+						<p>Here your poem</p>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 </body>
 <hr />
