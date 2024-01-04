@@ -6,7 +6,6 @@ function displayPoem (response){
         delay: 'natural',
       });
 }
-
 function generatePoem (event) {
     event.preventDefault ();
 
