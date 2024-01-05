@@ -23,7 +23,7 @@ h1 {
 }
 
 h5 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair', serif;
     font-size: 24px;
 }
 
@@ -96,12 +96,12 @@ form {
     }
   
     .instructions {
-        min-width: fit-content;
+        min-width: 50%;
         font-size: 14px;
     }
 
     .submit-button {
-        min-width: fit-content;
+        min-width: 50%;
         font-size: 14px;
     }
   }
