@@ -89,7 +89,7 @@ form {
     word-spacing: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     h1 {
       font-size: 18px;
       text-align: center;
