@@ -4,6 +4,7 @@ function displayPoem(response) {
       autoStart: true,
       delay: 'natural',
     });
+    document.querySelector("#copy-button").classList.remove("hidden");
   }
   
   function generatePoem(event) {
@@ -24,3 +25,15 @@ function displayPoem(response) {
   
   let poemFormElement = document.querySelector("#poem-generator-form");
   poemFormElement.addEventListener("submit", generatePoem);
+
+  function copyPoem() {
+    let poemText = document.querySelector("#poem").innerText;
+    navigator.clipboard.writeText(poemText).then(() => {
+        alert("¡Poema copiado!");
+    }).catch(err => {
+        alert("Error al copiar el poema.");
+    });
+}
+
+let copyButtonElement = document.querySelector("#copy-button");
+copyButtonElement.addEventListener("click", copyPoem);
