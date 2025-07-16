@@ -1,3 +1,5 @@
+//This functions is help us with th UI and how we show the results also we can copy the poem.
+
 function displayPoem(response) {
     new Typewriter("#poem", {
       strings: response.data.answer,
@@ -6,6 +8,9 @@ function displayPoem(response) {
     });
     document.querySelector("#copy-button").classList.remove("hidden");
   }
+
+  //Function to handle the user input and generate a poem. Here we use the SheCodes AI API. 
+  //We give the instructions to get API response, using the prompt and context.
   
   function generatePoem(event) {
     event.preventDefault();
@@ -23,17 +28,19 @@ function displayPoem(response) {
     axios.get(apiURL).then(displayPoem);
   }
   
+  //Event listener for the form submission
   let poemFormElement = document.querySelector("#poem-generator-form");
   poemFormElement.addEventListener("submit", generatePoem);
 
   function copyPoem() {
     let poemText = document.querySelector("#poem").innerText;
     navigator.clipboard.writeText(poemText).then(() => {
-        alert("¡Poema copiado!");
+        alert("Copy successfully!");
     }).catch(err => {
-        alert("Error al copiar el poema.");
+        alert("Error copying the poem.");
     });
 }
 
+// Add event listener to the copy button
 let copyButtonElement = document.querySelector("#copy-button");
 copyButtonElement.addEventListener("click", copyPoem);

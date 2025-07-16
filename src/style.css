@@ -75,6 +75,19 @@ form {
     background: #555;
     cursor: pointer;
 }
+
+#copy-button {
+    margin-top: 20px;
+    background: #9f9b9b;
+    color: white;
+    transition: background 0.3s ease;
+    border: none;
+    width: 70px;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 14px 24px;
+}
+
 .hint {
     line-height: 1.5;
     margin-top: 5px;
