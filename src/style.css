@@ -46,6 +46,13 @@ form {
     border: 1px solid #eee;
 }
 
+.card-body-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+
 .instructions {
     padding: 16px;
     border: 1px solid rgba(39, 33, 66, 0.5);
@@ -77,15 +84,7 @@ form {
 }
 
 #copy-button {
-    margin-top: 20px;
-    background: #9f9b9b;
-    color: white;
-    transition: background 0.3s ease;
-    border: none;
-    width: 70px;
-    font-size: 18px;
-    border-radius: 6px;
-    padding: 14px 24px;
+    margin-left: 0;
 }
 
 .hint {
@@ -123,6 +122,11 @@ form {
     }
 
     .submit-button {
+        min-width: 50%;
+        font-size: 14px;
+    }
+
+    #copy-button {
         min-width: 50%;
         font-size: 14px;
     }
